@@ -1,6 +1,17 @@
 # Voice Command Chrome Extension
 
-Basic Idea of this Project is, User should be able to interact with web pages content by looking at it and speaking only
+Objective: User can interact with content on any webpage by looking at it and speaking the commands.
+
+scenario: user is on google.com and wants to click on "search". then user will look at search button and say "click on search".
+
+### Technical Process:
+
+- Create a option page and plug in webgazer calibration system there so that user webgazer could calibrate according to individual user.
+
+- to open "Voice command" click on extenion icon then just look at any element and say your command. e.g. "click image". Within 100px boundry image will be searched in DOM of current active page.
+
+- Use annyang.js for Speech Apis built on top of chrome speechApis.
+- Use webgazer.js for tracking eye movements of user.
 
 ## Basic Usage
 
