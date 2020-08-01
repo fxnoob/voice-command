@@ -6,7 +6,7 @@ scenario: user is on google.com and wants to click on "search". then user will l
 
 ### Technical Process:
 
-- Create a option page and plug in webgazer calibration system there so that user webgazer could calibrate according to individual user.
+- Create a option page and plug in webgazer calibration system there so that webgazer could calibrate according to individual user.
 
 - to open "Voice command" click on extenion icon then just look at any element and say your command. e.g. "click image". Within 100px boundry image will be searched in DOM of current active page.
 
