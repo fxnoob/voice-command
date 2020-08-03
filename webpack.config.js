@@ -14,6 +14,10 @@ module.exports = (env, options) => {
     module: {
       rules: [
         {
+          test: /\.css$/i,
+          use: ["to-string-loader", "css-loader"]
+        },
+        {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           use: ["babel-loader"]
@@ -34,7 +38,7 @@ module.exports = (env, options) => {
       ]
     },
     resolve: {
-      extensions: ["*", ".js", ".jsx"]
+      extensions: [".mjs", "*", ".js", ".jsx", ".css"]
     },
     output: {
       path: __dirname + "/dist",
